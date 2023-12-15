@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-dotnet60-basic-bwus
     spec:
       containers:
-      - image: dotnet-image:latest
+      - image: quay.io/redhat-appstudio-qe/rs-demos-mymh-tenant/component-annotation-dotnet-component/devfile-sample-dotnet60-basic-bwus@sha256:9ddf8404ae0db7c99b50c41e8968a42bacf3c3734dd78eded727d04296cc4061
         imagePullPolicy: Always
         name: main
         ports:
