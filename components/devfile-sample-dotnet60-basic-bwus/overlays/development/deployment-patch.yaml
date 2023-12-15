@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-bwus
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rs-demos-mymh-tenant/component-annotation-dotnet-component/devfile-sample-dotnet60-basic-bwus@sha256:9ddf8404ae0db7c99b50c41e8968a42bacf3c3734dd78eded727d04296cc4061
+        name: main
+        resources: {}
+status: {}
